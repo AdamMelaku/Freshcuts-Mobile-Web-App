@@ -1,0 +1,13 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Josh
+ * Date: 4/3/2016
+ * Time: 7:18 PM
+ */
+$dsn='mysql:host=localhost;dbname=itss4312proj';
+$user='DBAdmin';
+$password='Group1';
+
+?>
+

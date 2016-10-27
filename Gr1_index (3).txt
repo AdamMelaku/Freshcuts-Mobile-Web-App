@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" >
+
+    <title> ITSS4312 Group 1 </title>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+</head>
+<body>
+
+<div data-role="page" id="home">
+    <div data-role="header">
+        <h1>Semester Project</h1>
+    </div>
+    <div data-role="content">
+        <div style="text-align: center;">
+            <h2>ITSS4312: Group 1 </h2>
+        </div>
+        <div style="text-align: center;">
+            <h3>May 2016</h3>
+        </div>
+        <p style="text-align: center;">Fresh Cuts</p>
+        <p style="text-align: center;">Students of the University of Texas at Dallas aiming to create a mobile web application that can simplify haircut process.</p>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="team">
+    <div data-role="header">
+        <h1>The Team</h1>
+    </div>
+    <div data-role="content">
+        <div style="text-align: left;">
+        <ul data-role="listview">
+            <li><a href="#team_leader">Team Leader</a></li>
+            <li><a href="#team_members">Team Members</a></li>
+        </ul>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team" class="ui-btn-active ui-state-persist">Team</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="team_leader">
+    <div data-role="header" data-theme="b">
+        <a href="#team" data-icon="back">Back</a>
+        <h1>Team Leader</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li style="text-align:center;">
+                <h1>Adam Melaku</h1>
+                <p>Major: Information Technology Systems</p>
+                <p>Contact Info: 972-977-0911</p>
+                <p><b>Responsibility: Lead the Team</b></p>
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team" class="ui-btn-active ui-state-persist">Team</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="team_members">
+    <div data-role="header" data-theme="b">
+        <a href="#team" data-icon="back">Back</a>
+        <h1>Team Members</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li style="text-align:center;">
+                <h1>Joshua Chang</h1>
+                <p>Major: Information Technology Systems/Marketing</p>
+                <p>Contact Info: 512-228-1320</p>
+                <p><b>Responsibility: Developer</b></p>
+            </li>
+            <li style="text-align:center;">
+                <h1>Murtaza Ali</h1>
+                <p>Major: Information Technology Systems</p>
+                <p>Contact Info: 469-879-0277</p>
+                <p><b>Responsibility: Developer</b></p>
+            </li>
+            <li style="text-align:center;">
+                <h1>Joshua Garcia</h1>
+                <p>Major: Information Technology Systems/Marketing</p>
+                <p>Contact Info: 972-822-9896</p>
+                <p><b>Responsibility: Developer</b></p>
+            </li>
+            <li style="text-align:center;">
+                <h1>Mark Haskins</h1>
+                <p>Major: Information Technology Systems</p>
+                <p>Contact Info: 214-491-7062</p>
+                <p><b>Responsibility: Developer</b></p>
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team" class="ui-btn-active ui-state-persist">Team</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="project">
+    <div data-role="header">
+        <h1>The Project</h1>
+    </div>
+    <div data-role="content">
+        <div style="text-align: center;">
+            <h2>Fresh Cuts</h2>
+        </div>
+        <p style="text-align: center;">The Fresh Cuts mobile web application is used to make haircut choices easier.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="#login" data-role="button">Run Application</a>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#project" class="ui-btn-active ui-state-persist">Project</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="login">
+    <div data-role="header">
+        <h1>Welcome to Freshcuts!</h1>
+    </div>
+    <div data-role="content" class="ui-content">
+        <div style="text-align: center;">
+            <a href="http://imgur.com/tpdszK7.jpg"><img src="http://imgur.com/tpdszK7.jpg" width="200" alt="Logo"/></a>
+        </div>
+        <form method="post" action= "select_login.php" data-ajax="false">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Email Address" data-clear-btn="true">
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="Password" data-clear-btn="true">
+
+                <input id="submit" name="submit" type="submit" value="Login">
+        </form>
+
+    </div>
+    <div style="text-align: center;">
+        <p>Not a user yet?<a href="#signup"> Sign-up</a></p>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#project" class="ui-btn-active ui-state-persist">Project</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="signup">
+    <div data-role="header">
+        <h1>Sign Up</h1>
+    </div>
+    <div data-role="content">
+        <p>
+            Please fill out the information below to finalize the creation of an account.
+        </p>
+        <form method="post" action= "select_register.php" data-ajax="false">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="First Name" data-clear-btn="true">
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name" data-clear-btn="true">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Email" data-clear-btn="true">
+
+            <label for="email2">Verify Email:</label>
+            <input type="text" name="email2" id="email2" placeholder="Email Verification" data-clear-btn="true">
+
+            <label for="newpassword">Password:</label>
+            <input type="password" name="newpassword" id="newpassword" placeholder="Password" data-clear-btn="true">
+
+            <label for="newpassword2">Retype Password:</label>
+            <input type="password" name="newpassword2" id="newpassword2" placeholder="Password" data-clear-btn="true">
+
+            <label for="age">Age:</label>
+            <input type="date" name="age" id="age" placeholder="Age" data-clear-btn="true">
+
+            <input id="submit" name="submit" type="submit" value="Register">
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#project" class="ui-btn-active ui-state-persist">Project</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+

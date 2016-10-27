@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" >
+
+    <title> ITSS4312 Group 1 </title>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <![endif]-->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+</head>
+<body>
+<div data-role="page" id="home">
+    <div data-role="header" class="ui-bar ui-bar-b">
+
+        <h1>Homepage</h1>
+        <button onclick="window.location.href='logout.php'" class="ui-btn-right">Sign out</button>
+
+    </div>
+    <div data-role="content">
+        <img style="margin:0px auto;display:block" src="http://imgur.com/tpdszK7.jpg/" width="450">
+        <br>
+        <p align="middle">Freshcuts is a web-mobile application designed to make getting a haircut easier for users</p>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
+                <li><a href="#feature">Feature List</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div data-role="page" id="feature">
+    <div data-role="header" class="ui-bar ui-bar-b">
+        <h1>FreshCuts</h1><button onclick="window.location.href='logout.php'" class="ui-btn-right">Sign out</button>
+    </div>
+    <div data-role="content">
+        <div style="text-align: center;">
+            <h2>Feature List</h2>
+        </div>
+        <br>
+        <br>
+        <div style="text-align: left;">
+            <ul data-role="listview">
+                <li><a href="#manageuseraccount">Manage User Account</a></li>
+                <li><a href="#search">Hairstyle Search</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature" class="ui-btn-active ui-state-persist">Feature List</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="search">
+    <div data-role="header" class="ui-bar ui-bar-b">
+        <button onclick="window.location.href='#feature'">Back</button>
+        <h1>FreshCuts</h1>
+        <button onclick="window.location.href='logout.php'" class="ui-btn-right">Sign out</button>
+    </div>
+    <div data-role="content">
+        <div style="text-align: center;">
+            <h2>Hairstyle Search</h2>
+        </div>
+        <form method="post" action= "hairstylelist.php" data-ajax="false">
+            <h4>Use the search box below to search different hairstyles.</h4>
+
+            <input id="search" type="search" name ="search">
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature" class="ui-btn-active ui-state-persist">Feature List</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="feedback">
+    <div data-role="header" class="ui-bar ui-bar-b">
+        <button onclick="window.location.href='#home'">Back</button>
+        <h1>Contact Us</h1>
+        <button onclick="window.location.href='logout.php'" class="ui-btn-right">Sign out</button>
+    </div>
+    <div data-role="content">
+        <form action="contact.php" method="post" data-ajax="false">
+            <label for="account">Name:</label>
+            <input type="text" placeholder="Name" name="account" id="account">
+            <label for="message">Message:</label>
+            <textarea placeholder="Your Message" name="message" id="message"></textarea>
+            <input type="submit" name="submit" id="submit" value="Send">
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature" >Feature List</a></li>
+                <li><a href="#feedback" class="ui-btn-active ui-state-persist">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+<div data-role="page" id="manageuseraccount">
+    <div data-role="header" class="ui-bar ui-bar-b">
+        <button onclick="window.location.href='#feature'">Back</button>
+        <h1>FreshCuts</h1>
+        <button onclick="window.location.href='logout.php'" class="ui-btn-right">Sign out</button>
+    </div>
+    <div data-role="content">
+        <div style="text-align: center;">
+            <h2>Manage User Accounts</h2>
+        </div>
+        <br>
+        <br>
+        <ul data-role="listview">
+            <li><a href="#changepassword">Change Password</a></li>
+            <li><a href="#deleteaccount">Delete Account</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature" class="ui-btn-active ui-state-persist">Feature List</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!----MARK--->
+
+<div data-role="page" id="changepassword">
+    <div data-role="header" class="ui-bar ui-bar-b">
+        <button onclick="window.location.href='#manageuseraccount'">Back</button>
+        <h1>FreshCuts</h1>
+        <button onclick="window.location.href='logout.php'" class="ui-btn-right">Sign out</button>
+    </div>
+    <div data-role="content">
+        <div style="text-align: center;">
+            <h2>Change Password</h2>
+        </div>
+        <form method="post" action= "change_password.php" data-ajax="false">
+        <div data-role="fieldcontain" class="ui-hide-label">
+            <input type="text" name="mail" id="mail" placeholder="Email" data-clear-btn="true">
+        </div>
+        <div data-role="fieldcontain" class="ui-hide-label">
+            <input type="password" name="currentpassword" id="currentpassword" placeholder="Current Password" data-clear-btn="true">
+        </div>
+        <div data-role="fieldcontain" class="ui-hide-label">
+            <input type="password" name="npassword" id="npassword" placeholder="New Password" data-clear-btn="true">
+        </div>
+        <input id="submit" name="submit" type="submit" value="Update">
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature" class="ui-btn-active ui-state-persist">Feature List</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-------- Murt---->
+
+<div data-role="page" id="deleteaccount">
+    <div data-role="header" class="ui-bar ui-bar-b">
+        <button onclick="window.location.href='#manageuseraccount'">Back</button>
+        <h1>FreshCuts</h1>
+        <button onclick="window.location.href='logout.php'" class="ui-btn-right">Sign out</button>
+    </div>
+    <div data-role="content">
+        <div style="text-align: center;">
+            <h2>Delete User Accounts</h2>
+        </div>
+        <br>
+        <br>
+        <form method="post" action= "delete_account.php" data-ajax="false">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input id="submit" name="submit" type="submit" value="Delete">
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed" data-id="nav">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature" class="ui-btn-active ui-state-persist">Feature List</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
